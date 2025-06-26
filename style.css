@@ -1,1 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
 
+#game {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
