@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kelime Oyunu</h1>
-    <div id="game">
-        <div id="score">Puan: <span id="score-value">0</span></div>
-        <div id="question"></div>
-        <input type="text" id="answer" placeholder="Cevabınız" autocomplete="off">
-        <button id="submit">Gönder</button>
-        <div id="result"></div>
-        <button id="next">Sonraki Soru</button>
-    </div>
+    <header>
+        <h1>Kelime Oyunu</h1>
+        <div id="total-time">240</div>
+    </header>
+
+    <section id="start-screen">
+        <button id="start-button">Oyuna Başla</button>
+    </section>
+
+    <main id="game" class="hidden">
+        <div id="clue"></div>
+        <div id="word-display"></div>
+        <div id="score-bar">Bu soru puanı: <span id="question-score">100</span></div>
+        <div id="final-timer" class="hidden">10</div>
+        <input type="text" id="guess" placeholder="Tahmininiz" autocomplete="off">
+        <div class="controls">
+            <button id="request-letter">Harf Al (-10)</button>
+            <button id="stop-timer">Durdur</button>
+            <button id="submit-answer">Gönder</button>
+            <button id="pass-question">Pas</button>
+        </div>
+        <div id="message"></div>
+    </main>
+
+    <footer id="final-score" class="hidden"></footer>
+
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

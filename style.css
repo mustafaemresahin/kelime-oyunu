@@ -5,6 +5,15 @@ body {
     padding: 20px;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
+#total-time {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 #game {
     background: #fff;
     border-radius: 8px;
@@ -13,18 +22,29 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-#question {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.hidden {
+    display: none;
 }
 
-#result {
+#word-display {
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+#message {
     margin-top: 10px;
     font-weight: bold;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em;
+#final-score {
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
 }
